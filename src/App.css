@@ -2,7 +2,8 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0.5rem;
-  text-align: center;
+  /* text-align: center; */
+  font-family:'Times New Roman', Times, serif;
 }
 
 .logo {
@@ -49,3 +50,20 @@
   min-height: 25vh;
 }
 
+.main{
+  background-image: url("../public/images/backgroundimage.jpg");
+}
+
+a.nav-link{
+  color:black;
+}
+
+a.active{
+  color:white;
+}
+
+footer{
+  position:fixed;
+  bottom:0px;
+  width:100%;
+}
