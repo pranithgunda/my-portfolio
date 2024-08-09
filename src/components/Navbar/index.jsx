@@ -7,7 +7,7 @@ function Navigationbar() {
     return (
             <Navbar expand="lg" className="">
                 <Container>
-                    <Navbar.Brand href="#" expand="lg">Pranith</Navbar.Brand>
+                    <Navbar.Brand href="#" expand="lg" className="text-dark"><h4>Pranith Gunda</h4></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
                         <Navtabs />
