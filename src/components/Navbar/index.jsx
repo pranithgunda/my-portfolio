@@ -14,7 +14,7 @@ function Navigationbar() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-    );
+    )
 };
 
 export default Navigationbar;
