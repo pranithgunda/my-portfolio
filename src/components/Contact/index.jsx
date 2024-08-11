@@ -1,6 +1,11 @@
+// Contact form component
+
 function Contact(){
     return(
-        <h1>Contact</h1>
+        <div className="p-4">
+        <h4>Contact</h4>
+
+        </div>
     )
 };
 
