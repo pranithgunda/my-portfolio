@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="mx-3">
+      <main className="main-area">
         <Outlet />
       </main>
       <Footer />

@@ -8,8 +8,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // Import error to handle undefined routes
 import Error from './pages/Error.jsx'
-// import AboutMe
-import AboutMe from './components/Aboutme'
+// import AboutMe, Portfolio, Contact and Resume Components
+import AboutMe from './components/Aboutme';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 // Configure routing, so right component renders based on URL
 const router = createBrowserRouter([
@@ -21,6 +24,18 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <AboutMe />
+      },
+      {
+        path:'/portfolio',
+        element:<Portfolio />
+      },
+      {
+        path:'/contact',
+        element:<Contact />
+      },
+      {
+        path:'/resume',
+        element:<Resume />
       }
     ]
   }

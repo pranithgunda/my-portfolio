@@ -1,0 +1,15 @@
+
+.project-card{
+    color:#F77F00;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px;
+    font-family: fantasy;
+}
+
+.project-card-small{
+    color:#F77F00;
+}
+
+a{
+    color:#F77F00;
+}

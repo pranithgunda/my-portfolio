@@ -16,8 +16,8 @@ function Navtabs() {
             </li>
             <li className="nav-item">
                 <Link
-                    to="/about"
-                    className={currentPage === '/about' ? 'nav-link active' : 'nav-link'}
+                    to="/portfolio"
+                    className={currentPage === '/portfolio' ? 'nav-link active' : 'nav-link'}
                 >
                     Portfolio
                 </Link>
@@ -37,7 +37,7 @@ function Navtabs() {
                 </Link>
             </li>
         </ul>
-    );
-}
+    )
+};
 
 export default Navtabs;
