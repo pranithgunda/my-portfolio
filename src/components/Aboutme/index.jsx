@@ -1,6 +1,5 @@
-import Col from 'react-bootstrap/Col';
+// AboutMe component
 import Image from 'react-bootstrap/Image';
-
 
 function AboutMe() {
     return (
