@@ -2,7 +2,7 @@
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 
 function Contact() {
@@ -56,15 +56,16 @@ function Contact() {
             <Form>
                 <Form.Group className="mb-3">
                     <Form.Label>Name:</Form.Label>
-                    <Form.Control type="text" name="name" value={formFields.name} onChange={handleInputChange} placeholder='Enter name' />
+                    {/* OnBlur event to trigger an action when user moves out of a form field */}
+                    <Form.Control type="text" name="name" value={formFields.name} onChange={handleInputChange} onBlur={handleInputChange} placeholder='Enter name' />
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" name="email" value={formFields.email} onChange={handleInputChange} placeholder="name@example.com" />
+                    <Form.Control type="email" name="email" value={formFields.email} onChange={handleInputChange} onBlur={handleInputChange} placeholder="name@example.com" />
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Label>Message</Form.Label>
-                    <Form.Control as='textarea' name="message" value={formFields.message} onChange={handleInputChange} rows={3} />
+                    <Form.Control as='textarea' name="message" value={formFields.message} onChange={handleInputChange} onBlur={handleInputChange} rows={3} />
                     {error && <p className="text-danger">{error}</p>}
                 </Form.Group>
                 <Button variant="primary">Submit</Button>
