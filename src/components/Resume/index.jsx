@@ -2,7 +2,7 @@ function Resume() {
     return (
         <div className="p-4">
             <h4>Resume</h4>
-            <p>Download my resume here <a href='../../../public/docs/Pranith Gunda Resume.pdf' download='Resume.pdf'>Resume</a></p>
+            <p>Download my resume here <a href='assets/docs/Pranith Gunda Resume.pdf' download='Resume.pdf'>Resume</a></p>
             <h5 className="proficiencies">Front-End Proficiencies</h5>
             <ul>
                 <li>

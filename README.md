@@ -8,17 +8,17 @@ My-Portfolio is built using the React Javascript library. Each portfolio section
 
 ## Screenshots
 
-![About Me](<assets/images/About Me.png>)
+![About Me](<public/assets/images/About Me.png>)
 
-![Portfolio](assets/images/Portfolio.png)
+![Portfolio](public/assets/images/Portfolio.png)
 
-![Contact Me](<assets/images/Contact Me.png>)
+![Contact Me](<public/assets/images/Contact Me.png>)
 
-![Resume And Skills](<assets/images/Resume And Skills.png>)
+![Resume And Skills](<public/assets/images/Resume And Skills.png>)
 
 ## Link To Deployed App
 
-TBD
+https://pranithgunda-portfolio.netlify.app/
 
 
 
