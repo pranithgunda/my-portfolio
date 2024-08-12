@@ -1,8 +1,26 @@
-# React + Vite
+# My-Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+My-Portfolio describes my professional background, experience and skills that, I have acquired through out my journey as a software developer. Please review the applications listed on the Portfolio tab, that showcases my skills and get in touch through the contact form available on my portfolio for futher questions. As a fullstack developer, I am open for new oppurtunities, please review the resume section to know more about me.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+My-Portfolio is built using the React Javascript library. Each portfolio section is a React component and built using React Bootstrap framework for styling. The application leverages, react features such as state, to apply hover effect on cards to display additional information and also for validations on contact fields.
+
+## Screenshots
+
+![About Me](<assets/images/About Me.png>)
+
+![Portfolio](assets/images/Portfolio.png)
+
+![Contact Me](<assets/images/Contact Me.png>)
+
+![Resume And Skills](<assets/images/Resume And Skills.png>)
+
+## Link To Deployed App
+
+TBD
+
+
+
+
+
