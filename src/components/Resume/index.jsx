@@ -1,3 +1,4 @@
+// Resume component to display link to download Resume and Proficiencies
 function Resume() {
     return (
         <div className="p-4">

@@ -1,10 +1,13 @@
-import { Container, Row, Col, Image, Nav, NavLink } from "react-bootstrap"
+// Footer component to display Github, LinkedIn and Stackoverflow accounts
+
+import { Container, Row, Col, Image } from "react-bootstrap"
 
 function Footer() {
     return (
         <footer>
             <Container fluid>
                 <Row className="bg-light p-1">
+                    {/* Use Col component so, Row can be evenly partitioned for placements of icons in the middle */}
                     <Col></Col>
                     <Col>
                         <a href='https://github.com/pranithgunda' target='_blank'>

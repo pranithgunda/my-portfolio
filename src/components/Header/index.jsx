@@ -1,4 +1,4 @@
-
+// Header component to display the Navbar
 import Navbar from '../Navbar'
 import '../../App.css'
 

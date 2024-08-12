@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 
 function Contact() {
-
+    // define state to manage form fields
     const [formFields, setFormFields] = useState({
         name: '',
         email: '',
@@ -31,9 +31,9 @@ function Contact() {
                 [name]: value,
             }));
             // validate for email
-            if(name==="email"){
-                if(!isValidEmail(value)){
-                    const errorMessage = 'Enter valid email address';
+            if (name === "email") {
+                if (!isValidEmail(value)) {
+                    const errorMessage = 'Your email is invalid';
                     setError(errorMessage);
                     return;
                 }
@@ -45,7 +45,7 @@ function Contact() {
                 ...prevFormFields,
                 [name]: '',
             }));
-            const errorMessage = 'Value cannot be blank';
+            const errorMessage = 'Field is required';
             setError(errorMessage);
         }
     }
