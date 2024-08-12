@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Col, Card, Stack } from 'react-bootstrap'
 import '../../../src/Card.css'
-import '@fortawesome/fontawesome-free/css/all.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
