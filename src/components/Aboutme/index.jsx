@@ -5,7 +5,8 @@ function AboutMe() {
     return (
         <div className="p-4">
             <h4>About Me</h4>
-            <Image src="../../../public/images/pranith.png" fluid/>
+            assets\images\pranith.png
+            <Image src="./assets/images/pranith.png" fluid/>
             <p>I am Pranith Gunda, Software developer based out of Orlando, FL. I am a Computer Science Graduate from 
                 University of Central Missouri, graduated in year 2016. I started my career in IT as a Software Developer
                 in Pega Technology. I currently work as a  Senior Application Developer in Healthfirst, Inc, a healthcare 
