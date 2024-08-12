@@ -45,7 +45,7 @@
 }
 
 .header{
-  background-image: url("assets/images/header.png");
+  background-image: url("../public/assets/images/header.png");
   min-height: 10vh;
 }
  
