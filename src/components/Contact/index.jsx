@@ -14,15 +14,30 @@ function Contact() {
     });
     const [error, setError] = useState('');
 
+    // function to validate email address
+    const isValidEmail = (email) => {
+        // regex to validate email pattern
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return emailPattern.test(email);
+    }
+
     const handleInputChange = (event) => {
         event.preventDefault();
         const { name, value } = event.target;
         if (value !== "") {
-            // set form fields
+            // set form fields using state function
             setFormFields((prevFormFields) => ({
                 ...prevFormFields,
                 [name]: value,
             }));
+            // validate for email
+            if(name==="email"){
+                if(!isValidEmail(value)){
+                    const errorMessage = 'Enter valid email address';
+                    setError(errorMessage);
+                    return;
+                }
+            }
             setError('');
         } else {
             // if empty reset value to null
@@ -50,7 +65,7 @@ function Contact() {
                 <Form.Group className="mb-3">
                     <Form.Label>Message</Form.Label>
                     <Form.Control as='textarea' name="message" value={formFields.message} onChange={handleInputChange} rows={3} />
-                    {error && <p>{error}</p>}
+                    {error && <p className="text-danger">{error}</p>}
                 </Form.Group>
                 <Button variant="primary">Submit</Button>
             </Form>
