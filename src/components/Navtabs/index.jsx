@@ -1,4 +1,4 @@
-// Import required component and method from react-router-dom
+// Navtabs component to display links About Me, Portfolio, Contact and Resume
 import { Link, useLocation } from 'react-router-dom'
 
 function Navtabs() {
@@ -24,15 +24,15 @@ function Navtabs() {
             </li>
             <li className="nav-item">
                 <Link
-                to="/contact"
-                className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}>
+                    to="/contact"
+                    className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}>
                     Contact
                 </Link>
             </li>
             <li className="nav-item">
                 <Link
-                to="/resume"
-                className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'}>
+                    to="/resume"
+                    className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'}>
                     Resume
                 </Link>
             </li>

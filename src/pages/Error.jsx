@@ -1,3 +1,5 @@
+// Error component to handle undefined routes
+// Import useRouteError method to handle errors
 import { useRouteError } from "react-router-dom";
 
 export default function ErrorPage() {
