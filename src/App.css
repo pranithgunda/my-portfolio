@@ -53,6 +53,17 @@ a.nav-link{
   color:black;
 }
 
+/* To highlight link to white on focus */
+a.nav-link:focus{
+  color:white;
+}
+
+/* To highlight link to white on hover */
+a.nav-link:hover{
+  color:white;
+}
+
+/* To display active link in white  */
 a.active{
   color:white;
 }
