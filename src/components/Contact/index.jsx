@@ -6,6 +6,8 @@ import React, { useState } from 'react';
 
 
 function Contact() {
+    // Declare errorMessage variable
+    let errorMessage = "";
     // define state to manage form fields
     const [formFields, setFormFields] = useState({
         name: '',
@@ -33,7 +35,7 @@ function Contact() {
             // validate for email
             if (name === "email") {
                 if (!isValidEmail(value)) {
-                    const errorMessage = 'Your email is invalid';
+                    errorMessage = 'Your email is invalid';
                     setError(errorMessage);
                     return;
                 }
@@ -45,7 +47,13 @@ function Contact() {
                 ...prevFormFields,
                 [name]: '',
             }));
-            const errorMessage = 'Field is required';
+            if (name === 'name') {
+                errorMessage = 'Name is required';
+            } else if (name === 'email') {
+                errorMessage = 'Email is required';
+            } else if (name === 'message') {
+                errorMessage = 'Message is required';
+            }
             setError(errorMessage);
         }
     }
@@ -58,15 +66,17 @@ function Contact() {
                     <Form.Label>Name:</Form.Label>
                     {/* OnBlur event to trigger an action when user moves out of a form field */}
                     <Form.Control type="text" name="name" value={formFields.name} onChange={handleInputChange} onBlur={handleInputChange} placeholder='Enter name' />
+                    {error.startsWith('Name') && <p className="text-danger">{error}</p>}
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" name="email" value={formFields.email} onChange={handleInputChange} onBlur={handleInputChange} placeholder="name@example.com" />
+                    {(error.startsWith('Email') || error.startsWith('Your')) && <p className="text-danger">{error}</p>}
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Label>Message</Form.Label>
                     <Form.Control as='textarea' name="message" value={formFields.message} onChange={handleInputChange} onBlur={handleInputChange} rows={3} />
-                    {error && <p className="text-danger">{error}</p>}
+                    {error.startsWith('Message') && <p className="text-danger">{error}</p>}
                 </Form.Group>
                 <Button variant="primary">Submit</Button>
             </Form>
