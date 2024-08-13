@@ -12,7 +12,9 @@ My-Portfolio is built using the React Javascript library. Each portfolio section
 
 ![Portfolio](public/assets/images/Portfolio.png)
 
-![Contact Me](<public/assets/images/Contact Me.png>)
+![Contact Form Email Validation](<public/assets/images/Contact Form Email Validation.png>)
+
+![Contact Form Required Field Validation](<public/assets/images/Contact Form Required Field Validation.png>)
 
 ![Resume And Skills](<public/assets/images/Resume And Skills.png>)
 
